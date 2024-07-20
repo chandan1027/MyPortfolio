@@ -1,1 +1,283 @@
+ @font-face {
+        font-family: Clip;
+        src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+      }
+
+      body {
+        background-color: #121818;
+        background-image: linear-gradient(335deg, black 23px, transparent 23px),
+          linear-gradient(155deg, black 23px, transparent 23px),
+          linear-gradient(335deg, black 23px, transparent 23px),
+          linear-gradient(155deg, black 23px, transparent 23px);
+        background-size: 58px 58px;
+        background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+        margin: 3%;
+        padding: 0;
+        height: 100vh;
+        color: aqua;
+      }
+
+      header {
+        color: aqua;
+        font-size: 4em;
+        padding-left: 5%;
+        margin-top: -5%;
+        text-shadow: rgb(0, 157, 255) 0px 0px 10px;
+      }
+
+      .img {
+        height: 400px;
+        float: right;
+        margin-top: -10%;
+        border-radius: 30px;
+        filter: drop-shadow(rgb(0, 255, 255) 0px 0px 5px);
+      }
+
+      .desc {
+        color: rgb(221, 255, 0);
+        font-size: 2.6em;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        padding-left: 5%;
+        padding-right: 10%;
+        margin-top: -5%;
+        text-shadow: rgb(255, 0, 0) 0px 0px 2px;
+      }
+
+      .dm {
+        color: aliceblue;
+        margin-top: 12%;
+        font-size: 1.8em;
+        font-family: monospace;
+        padding-right: 10%;
+        padding-left: 5%;
+        padding-top: 0;
+      }
+
+      hr {
+        margin-top: 5%;
+        margin-left: 5%;
+      }
+
+      .sh {
+        color: chartreuse;
+        font-size: 3.8em;
+        padding-left: 5%;
+        text-shadow: rgb(0, 88, 27) 0px 0px 10px;
+      }
+
+      .skills-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1s, transform 1s;
+      }
+
+      .skills-content.animate {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .skill {
+        margin: 20px;
+        text-align: center;
+      }
+
+      .skill i {
+        font-size: 4em;
+        color: #11cba0;
+      }
+
+      .progress-bar {
+        background: #e0e0e0;
+        border-radius: 5px;
+        overflow: hidden;
+        height: 20px;
+        width: 200px;
+        margin: 10px auto;
+      }
+
+      .progress {
+        background: #00ffea;
+        height: 100%;
+        width: 0;
+        transition: width 2s;
+      }
+
+      .skills-content.animate .progress.html {
+        width: 90%;
+      }
+
+      .skills-content.animate .progress.css {
+        width: 85%;
+      }
+
+      .skills-content.animate .progress.js {
+        width: 80%;
+      }
+
+      .skills-content.animate .progress.react {
+        width: 75%;
+      }
+
+      footer {
+        margin-left: -20%;
+        margin-right: -20%;
+        background: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      .projects {
+        color: blue;
+      }
+
+      .projects-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1s, transform 1s;
+      }
+
+      .projects-content.animate {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .project {
+        background-color: #e0e0e0;
+        margin: 20px;
+        width: 300px;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 1s, transform 1s;
+      }
+
+      .projects-content.animate .project {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .imgp {
+        width: 300px;
+      }
+      .social-links {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+        margin-bottom: 2%;
+    }
+    
+    .social-links a {
+        filter: drop-shadow(rgb(255, 25, 0) 0px 0px 4px);
+        margin: 0 10%;
+        color: #fcca01;
+        font-size: 3.5em;
+        transition: color 0.3s;
+    }
+    
+    .social-links a:hover {
+      filter: drop-shadow(rgb(0, 179, 255) 0px 0px 4px);
+        color: #00ffea;
+    }
+    
+    @media (max-width: 768px) {
+      header {
+        font-size: 3em;
+        text-align: center;
+        margin-top: 0;
+        padding-left: 0;
+      }
+  
+      .img {
+        height: 200px;
+        float: none;
+        display: block;
+        margin: 20px auto;
+        border-radius: 0;
+      }
+  
+      .desc {
+        font-size: 1.8em;
+        text-align: center;
+        padding: 0 5%;
+        margin-top: 0;
+      }
+  
+      .dm {
+        font-size: 1.2em;
+        text-align: center;
+        margin-top: 5%;
+        padding: 0 5%;
+      }
+  
+      .sh {
+        font-size: 2.5em;
+        text-align: center;
+      }
+  
+      .skill i {
+        font-size: 3em;
+      }
+  
+      .social-links a {
+        font-size: 2em;
+        margin: 0 10px;
+      }
+  
+      .project {
+        width: 90%;
+        margin: 20px auto;
+      }
+  
+      footer {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      header {
+        font-size: 2em;
+      }
+  
+      .desc {
+        font-size: 1.5em;
+      }
+  
+      .dm {
+        font-size: 1em;
+      }
+  
+      .sh {
+        font-size: 2em;
+      }
+  
+      .skill i {
+        font-size: 2.5em;
+      }
+  
+      .social-links a {
+        font-size: 1.5em;
+        margin: 0 5px;
+      }
+    }
+
+    .project h3{
+      color: rgb(23, 23, 179);
+      padding-left: 10px;
+      text-shadow: #121818 0px 0px 1px;
+      margin: 0;
+    }
+
+    .project p{
+      color: indigo;
+      padding-left: 10px;
+      margin: 0;
+    }
 
